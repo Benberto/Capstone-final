@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const routes = require('./routes/profile.js');
 
-//Load config file
 dotenv.config({path: './.env'});
 
 const app = express();
@@ -9,8 +9,9 @@ const app = express();
 
 
 //Profile routes;
-app.use('/api/v1/profile', require('./routes/profile'));
-const port = process.env.PORT || 5050;
+app.use('/', routes)
+app.use('/api/v1/profile', require('./routes/profile.js'));
+const port = process.env.SERVER_PORT || 4000;
 
 
     //Set static folder

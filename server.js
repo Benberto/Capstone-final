@@ -10,7 +10,7 @@ const app = express();
 
 //Profile routes;
 app.use('/api/v1/profile', require('./routes/profile'));
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5050;
 
 
     //Set static folder

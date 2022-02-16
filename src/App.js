@@ -2,7 +2,7 @@ import Search from './components/Search'
 import React from 'react'
 import Header from './components/Header'
 import Profile from './components/Profile'
-import {BroswerRouter as Router, Route, Routes} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import { StatProvider } from './StatProvider'
 function App() {
   return (

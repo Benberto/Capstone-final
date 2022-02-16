@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Search from './components/Search'
+import React from 'react'
+import Header from './components/Header'
+import Profile from './components/Profile'
+import {BroswerRouter as Router, Route, Routes} from 'react-router-dom'
+import { StatProvider } from './StatProvider'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='no-background-image'>
+        <StatProvider>
+          <Header/>
+          <Routes>
+            <Route exact path='/' element={<Search pcPlatform ='origin' platforms= 'Origin Id, PSN ID, Xbox Gamertag'/>} />
+            <Route exact path='/profile/:platform/:gamertag' element={<Profile/>}/>
+          </Routes>
+        </StatProvider>
     </div>
   );
 }

@@ -1,19 +1,54 @@
-import Search from './components/Search'
-import React from 'react'
-import Header from './components/Header'
-import Profile from './components/Profile'
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import { StatProvider } from './StatProvider'
+import React from "react";
+// import "./index.css";
+// import "./home.css"
+import Home from "./Home";
+import CSGO from "./CSGO";
+import Warzone from "./Warzone.js";
+import Apex from "./Apex";
+import { Routes, Route } from "react-router-dom";
+// import NavBar from "./NavBar";
+// import Search from './Search'
+import Profile from "./components/Profile";
+import { StatProvider } from "./StatProvider";
+import { StatProviderwz } from "./StatProviderwz";
+import { StatProvidercs } from "./StatProvidercs";
+import Profilecs from "./componentscsgo/Profilecs";
+import Profilewz from "./componentswz/Profilewz";
+
 function App() {
   return (
-    <div className='no-background-image'>
-        <StatProvider>
-          <Header/>
-          <Routes>
-            <Route exact path='/' element={<Search pcPlatform ='origin' platforms= 'Origin Id, PSN ID, Xbox Gamertag'/>} />
-            <Route exact path='/profile/:platform/:gamertag' element={<Profile/>}/>
-          </Routes>
-        </StatProvider>
+    <div className="App">
+      <StatProvider>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/apex-legends-tracker" element={<Apex />} />
+          <Route path="/warzone-tracker" element={<Warzone />} />
+          <Route path="/csgo-tracker" element={<CSGO />} />
+          {/* <Route exact path='/' element={<Search pcPlatform ='origin' platforms= 'Origin Id, PSN ID, Xbox Gamertag'/>} /> */}
+          <Route
+            // exact
+            path="/profile/:platform/:gamertag"
+            element={<Profile />}
+          />
+        </Routes>
+      </StatProvider>
+      <StatProviderwz>
+        <Routes>
+        <Route
+            path="/api/warzone/:gamertag/:platform"
+            element={<Profilewz />}
+          />
+        </Routes>
+      </StatProviderwz>
+      <StatProvidercs>
+        <Routes>
+        <Route
+            // exact
+            path="/csgo-tracker/api/v2/profile/:platform/:gamertag"
+            element={<Profilecs />}
+          />
+        </Routes>
+      </StatProvidercs>
     </div>
   );
 }

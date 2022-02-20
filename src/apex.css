@@ -81,6 +81,23 @@ label {
   color:white;
   border-radius: 20px;
 }
+
+.home-button {
+  margin-top: 10px;
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  background-color:#464646;
+  color:white;
+  border-radius: 20px;
+}
+
+.home-button:hover {
+  background-color: #953036;
+}
+
 /*End of search-container components*/
 .loading{
   top: 50%;
@@ -111,7 +128,7 @@ label {
   position: absolute;
   z-index: 10;
   top: 50%;
-  left: 30%;
+  left: 28%;
   transform: translate(-50%, -50%);
   
 }

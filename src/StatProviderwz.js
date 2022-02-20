@@ -1,9 +1,9 @@
 import axios from "axios";
 import React, { createContext } from "react";
 
-const StatContext = createContext();
-const StatConsumer = StatContext.Consumer;
-class StatProvider extends React.Component {
+const StatContextwz = createContext();
+const StatConsumerwz = StatContextwz.Consumer;
+class StatProviderwz extends React.Component {
   state = {
     loading: true,
     error: false,
@@ -13,9 +13,10 @@ class StatProvider extends React.Component {
   getStats = async (platform, gamertag) => {
     try {
       const response = await axios.get(
-        `/api/v1/profile/${platform}/${gamertag}`
+        `/${gamertag}/${platform}`
       );
-      this.setState({ loading: false, profileData: response.data.data });
+      this.setState({ loading: false, profileData: console.log(response.data) });
+      // console.log(this.state);
     } catch (err) {
       this.setState({
         loading: false,
@@ -36,7 +37,7 @@ class StatProvider extends React.Component {
 
   render() {
     return (
-      <StatContext.Provider
+      <StatContextwz.Provider
         value={{
           state: this.state,
           getStats: this.getStats,
@@ -44,9 +45,9 @@ class StatProvider extends React.Component {
         }}
       >
         {this.props.children}
-      </StatContext.Provider>
+      </StatContextwz.Provider>
     );
   }
 }
 
-export { StatContext, StatProvider, StatConsumer };
+export { StatContextwz, StatProviderwz, StatConsumerwz };

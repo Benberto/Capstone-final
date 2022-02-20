@@ -2,7 +2,7 @@
   "name": "capstone-final",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4000/ || https://capstone-stat-tracker.herokuapp.com/",
+  "proxy": "http://localhost:4000/",
   "dependencies": {
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-node-resolve": "^13.1.3",

@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const routes = require('./routes/profile.js');
+const routes = require('./routes/profile');
+
 
 dotenv.config({path: './.env'});
 
@@ -9,9 +10,9 @@ const app = express();
 
 
 //Profile routes;
-app.use('/', routes)
-app.use('/api/v2/profile', require('./routes/profilecs.js'));
-app.use('/api/v1/profile', require('./routes/profile.js'));
+app.use('/', routes,)
+app.use('/api/v2/profile', require('./routes/profilecs'));
+app.use('/api/v1/profile', require('./routes/profile'));
 app.use('/api/warzone', require('./routes/profilewz.js'));
 const port = process.env.SERVER_PORT || 4000;
 

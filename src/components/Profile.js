@@ -19,7 +19,7 @@ function Profile() {
 
     const onClick = () => {
         context.resetState()
-        navigate(`/`);
+        navigate(`/apex-legends-tracker`);
     }
     if(context.state.loading === true){
         return (

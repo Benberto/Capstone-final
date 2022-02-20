@@ -1,0 +1,12 @@
+*{
+  margin:0px;
+  padding: 0px;
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 3px;
+}
+
+.warzone-container{
+  height:100vh;
+  overflow: hidden;
+  background: url(./assets/cod-warzone.jpg) no-repeat top center;
+}

@@ -8,7 +8,7 @@ router.get('/:gamertag/:platform', async (req, res) => {
           'x-rapidapi-host': 'call-of-duty-modern-warfare.p.rapidapi.com',
           'x-rapidapi-key': process.env.WARZONE_API_KEY
       }
-
+      console.log('hit')
       const{platform, gamertag} = req.params;
 
       const responses = await fetch(`${process.env.WARZONE_API_URL}/${gamertag}/${platform}`,{
@@ -22,7 +22,7 @@ router.get('/:gamertag/:platform', async (req, res) => {
               message: 'Player Not Found'
           })
       }
-
+      console.log(data)
       res.json(data);
   }catch(err){
       console.error(err);

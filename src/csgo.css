@@ -1,0 +1,50 @@
+*{
+  margin:0px;
+  padding: 0px;
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 3px;
+}
+
+.csgo-container{
+  height:100vh;
+  overflow: hidden;
+  background: url(./assets/csgobg.jpg);
+}
+
+.csgo-player-profile{
+  width: 340px;
+  height: 50%;
+  display:flex;
+  /*background: rgb(0,0,0,0.65);*/
+  background: white;
+  border-radius: 20px;
+  position:fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:black;
+}
+
+.csgo-player-profile .stats{
+  margin-top:8%;
+  height:100%;
+  width:100%;
+  position:relative;
+  text-align:center;
+}
+
+div.agent-img {
+  content: url(./assets/csgoAgent3.png);
+  
+  width: 400px;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(3px 7px 4px #222);
+}
+
+div.csgo-logo{
+  content: url(./assets/csgo-logo.png);
+  width: 750px;
+}

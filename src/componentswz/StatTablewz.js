@@ -1,6 +1,6 @@
 import React from 'react'
 
-function StatTablewz({overview, stats}) {
+function StatTablewz({overview, stats, activeLegend}) {
    let i = 0;
    let legendStats = Object.entries(stats).map(([key, value]) => {
        i += 1;
@@ -20,6 +20,8 @@ function StatTablewz({overview, stats}) {
             <div className='legend-stats'>
                 <div>
                     {/* <div className = 'stat'> */}
+                        {/* <p className = 'stat-name'>Selected Legend</p>
+                        <p className = 'stat-value'>{activeLegend.metadata.name}</p> */}
                     {/* </div> */}
                 </div>
                 {legendStats} 

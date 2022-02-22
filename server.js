@@ -13,7 +13,7 @@ const app = express();
 app.use('/', routes,)
 app.use('/api/v2/profile', require('./routes/profilecs'));
 app.use('/api/v1/profile', require('./routes/profile'));
-app.use('/api/warzone', require('./routes/profilewz.js'));
+app.use('/api/v3/profile', require('./routes/splitgate'));
 const port = process.env.SERVER_PORT || 4000;
 
 

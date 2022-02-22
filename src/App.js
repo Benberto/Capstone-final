@@ -22,33 +22,35 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/apex-legends-tracker" element={<Apex />} />
-          <Route path="/warzone-tracker" element={<Warzone />} />
+          <Route path="/splitgate-tracker" element={<Warzone />} />
           <Route path="/csgo-tracker" element={<CSGO />} />
           {/* <Route exact path='/' element={<Search pcPlatform ='origin' platforms= 'Origin Id, PSN ID, Xbox Gamertag'/>} /> */}
           <Route
-            // exact
+            exact
             path="/profile/:platform/:gamertag"
             element={<Profile />}
           />
         </Routes>
       </StatProvider>
-      <StatProviderwz>
-        <Routes>
-        <Route
-            path="/api/warzone/:gamertag/:platform"
-            element={<Profilewz />}
-          />
-        </Routes>
-      </StatProviderwz>
+      
       <StatProvidercs>
         <Routes>
         <Route
-            // exact
+            exact
             path="/csgo-tracker/api/v2/profile/:platform/:gamertag"
             element={<Profilecs />}
           />
         </Routes>
       </StatProvidercs>
+      <StatProviderwz>
+        <Routes>
+        <Route
+            exact
+            path="/splitgate-tracker/api/v3/profile/:platform/:gamertag"
+            element={<Profilewz />}
+          />
+        </Routes>
+      </StatProviderwz>
     </div>
   );
 }

@@ -8,5 +8,42 @@
 .warzone-container{
   height:100vh;
   overflow: hidden;
-  background: url(./assets/cod-warzone.jpg) no-repeat top center;
+  background: url(./assets/splitgate-logo.png) no-repeat top center;
+}
+
+.splitgate-player-profile{
+  width: 450px;
+  height: 50%;
+  display:flex;
+  /*background: rgb(0,0,0,0.65);*/
+  background: rgba(255, 255, 255, 0.904);
+  border-radius: 20px;
+  position:fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:black;
+}
+
+.splitgate-player-profile .stats{
+  color:black;
+  margin-top:2%;
+  height:100%;
+  width:100%;
+  
+  position:relative;
+  text-align:center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+div.spartan-img {
+  content: url(./assets/hero_character.png);
+  
+  width: 275px;
+  position: absolute;
+  top: 75.5%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(3px 7px 4px #222);
 }

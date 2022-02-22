@@ -13,10 +13,9 @@ class StatProviderwz extends React.Component {
   getStats = async (platform, gamertag) => {
     try {
       const response = await axios.get(
-        `/${gamertag}/${platform}`
+        `/api/v3/profile/${platform}/${gamertag}`
       );
-      this.setState({ loading: false, profileData: console.log(response.data) });
-      // console.log(this.state);
+      this.setState({ loading: false, profileData: response.data.data });
     } catch (err) {
       this.setState({
         loading: false,

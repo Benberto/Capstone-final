@@ -54,8 +54,8 @@ label {
   padding: 10px;
 }
 .platform .select-platform{
-  border-radius: 20px;
-  width: 100%;
+  /* border-radius: 20px; */
+  width: 99.5%;
   padding: 5px;
   font-size: 15px;
 }
@@ -156,8 +156,11 @@ label {
 .player-profile .stats{
   height:100%;
   width:100%;
+  margin-top: 8%;
   position:relative;
   text-align:center;
+  /* font-size: 25px; */
+  font-weight: bold
 }
 
 .player-profile .platform-icon{
@@ -196,6 +199,8 @@ label {
 
 .stats button{
   padding-top: 2px;
+  height: 40px;
+  width: 150px;
   padding-bottom: 2px;
   padding-left: 10px;
   padding-right: 10px;

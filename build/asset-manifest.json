@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9a1f703.css",
+    "main.js": "/static/js/main.fcaa03f3.js",
+    "static/media/csgoAgent3.png": "/static/media/csgoAgent3.ad9ab2401e6170d3d6fd.png",
+    "static/media/splitgate-logo.png": "/static/media/splitgate-logo.7dd10263947af6433839.png",
+    "static/media/csgobg.jpg": "/static/media/csgobg.684cebac8d839d903e16.jpg",
+    "static/media/hero_character.png": "/static/media/hero_character.539913985ad780f08107.png",
+    "static/media/bgimg2.jfif": "/static/media/bgimg2.81d03c5a80636918f2d5.jfif",
+    "static/media/bgimg.jpg": "/static/media/bgimg.1902ff624c5179b639a8.jpg",
+    "static/media/csgo-logo.png": "/static/media/csgo-logo.8172c794acbe6d694c05.png",
+    "static/media/logo.png": "/static/media/logo.4d117e180e5fbc90ce00.png",
+    "static/media/splitgate-button.jfif": "/static/media/splitgate-button.06f9115f80d7b5400c90.jfif",
+    "static/media/StatTrackerLogo-removebg-preview.png": "/static/media/StatTrackerLogo-removebg-preview.08348044927c7a40f6a9.png",
+    "static/media/apexlogo.jfif": "/static/media/apexlogo.d3bb98e8bf48e896747f.jfif",
+    "static/media/CSGO.jfif": "/static/media/CSGO.528f65727e63c3b43bef.jfif",
+    "index.html": "/index.html",
+    "main.d9a1f703.css.map": "/static/css/main.d9a1f703.css.map",
+    "main.fcaa03f3.js.map": "/static/js/main.fcaa03f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9a1f703.css",
+    "static/js/main.fcaa03f3.js"
+  ]
+}
